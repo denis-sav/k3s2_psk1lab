@@ -1,7 +1,7 @@
 package com.example.k3s2_psk1lab.mybatis.dao;
 
 import com.example.k3s2_psk1lab.mybatis.model.Athlete;
-import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.cdi.Mapper;
 
 import java.util.List;
 

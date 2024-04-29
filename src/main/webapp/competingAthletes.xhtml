@@ -31,7 +31,7 @@
                 <h:selectOneMenu id="selectedAthleteMenu" value="#{competingAthletes.selectedAthlete.id}" required="true" styleClass="inputText">
                     <f:selectItem itemLabel="Select Athlete" itemValue="" noSelectionOption="true"/>
                     <f:selectItems value="#{athletes.allAthletes}" var="athlete"
-                                   itemLabel="#{athlete.name} #{athlete.surname} #{athlete.team}" itemValue="#{athlete.id}" />
+                                   itemLabel="#{athlete.name} #{athlete.surname} #{athlete.team.name}" itemValue="#{athlete.id}" />
                 </h:selectOneMenu>
                 <h:commandButton class="mainButton"
                                  value="Register"

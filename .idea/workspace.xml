@@ -9,12 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment=" Big changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/TextTransformer.java" afterDir="false" />
+    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="MyBatis done">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/interceptors/MethodLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/MyBatisResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/TeamsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/AthletesForTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/TeamsMyBatis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mybatis/athletes.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/PirmasKomponentas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/AthleteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/AthleteMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/CompetitionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/CompetitionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/TeamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/TeamMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mybatis/competitions.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mybatis/teams.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +229,8 @@
       <workItem from="1714352924607" duration="350000" />
       <workItem from="1714353294228" duration="3456000" />
       <workItem from="1714377618316" duration="1812000" />
-      <workItem from="1714379449770" duration="256000" />
+      <workItem from="1714379449770" duration="3044000" />
+      <workItem from="1714382511693" duration="1734000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -251,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714356697080</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CDI addition">
+      <option name="closed" value="true" />
+      <created>1714379723823</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714379723823</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +305,9 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="css addition" />
     <MESSAGE value=" Big changes" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Big changes" />
+    <MESSAGE value="CDI addition" />
+    <MESSAGE value="MyBatis done" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyBatis done" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

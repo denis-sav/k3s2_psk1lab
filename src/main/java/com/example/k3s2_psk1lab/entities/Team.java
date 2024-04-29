@@ -11,6 +11,9 @@ import java.util.List;
 @Getter
 @EqualsAndHashCode
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Team.findAll", query = "select t from Team as t")
+})
 public class Team {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
@@ -24,5 +27,6 @@ public class Team {
 
     @OneToMany(mappedBy = "team")
     private List<Athlete> athletes;
+
 
 }

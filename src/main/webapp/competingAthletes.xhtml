@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+>
+<h:head>
+    <h:outputStylesheet library="css" name="styles.css"/>
+    <h:outputScript library="javascript" name="scripts.js"/>
+</h:head>
+<h:body>
+    <div class="competingAthletes">
+        <h2>Competing athletes</h2>
+        <h4>Competition: #{competingAthletes.competition.name}</h4>
+        <div class="createNew">
+            <h4>Update competition</h4>
+            <h:form>
+                <h:inputText styleClass="inputText" value="#{competingAthletes.competitionToUpdate.name}" required="true" />
+                <h:commandButton class="mainButton" styleClass="commandButton" value="Update" actionListener="#{competingAthletes.updateCompetition}"
+                                 action="#{'competingAthletes?faces-redirect=true&amp;competitionId='.concat(competingAthletes.competition.id)}">
+                    <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
+                </h:commandButton>
+            </h:form>
+        </div>
+        <br/>
+        <div class="createNew">
+            <h4>Register athlete</h4>
+            <h:form>
+                <h:selectOneMenu value="#{competingAthletes.selectedAthlete.id}" required="true" styleClass="inputText">
+                    <f:selectItem itemLabel="Select Athlete" itemValue="" noSelectionOption="true"/>
+                    <f:selectItems value="#{athletes.allAthletes}" var="athlete"
+                                   itemLabel="#{athlete.name} #{athlete.surname} #{athlete.team}" itemValue="#{athlete.id}" />
+                </h:selectOneMenu>
+                <h:commandButton class="mainButton"
+                                 value="Register"
+                                 actionListener="#{competingAthletes.createActiveAthlete}"
+                                 action="#{'competingAthletes?faces-redirect=true&amp;competitionId='.concat(competingAthletes.competition.id)}">
+                    <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
+                </h:commandButton>
+            </h:form>
+
+        </div>
+        <br/>
+        <h4>Registered athletes</h4>
+            <h:dataTable value="#{competingAthletes.allParticipants}" var="athlete">
+                <h:column>
+                    <h:button class="mainButton" value="#{athlete.name} #{athlete.surname} #{athlete.team}"
+                              outcome="competingAthletes?competitionid=#{athlete.id}" />
+                </h:column>
+            </h:dataTable>
+
+        <br/>
+
+        <div class="createNew">
+            <h4>Create new</h4>
+            <h:form>
+                <p>Name</p>
+                <h:inputText styleClass="inputText" value="#{athletes.athleteToCreate.name}" required="true" />
+                <p>Surname</p>
+                <h:inputText styleClass="inputText" value="#{athletes.athleteToCreate.surname}" required="true" />
+                <h:commandButton class="mainButton" styleClass="commandButton" value="Add new athlete" actionListener="#{athletes.createAthlete}"
+                                 action="#{'competingAthletes?faces-redirect=true&amp;competitionId='.concat(competingAthletes.competition.id)}">
+                    <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
+                </h:commandButton>
+            </h:form>
+        </div>
+
+        <br/>
+        <h:button class="mainButton" value="Back"
+                  outcome="index" />
+    </div>
+
+</h:body>
+</html>

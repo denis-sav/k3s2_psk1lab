@@ -9,10 +9,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="Styles">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
+    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment=" Big changes">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Athlete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Competition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/interceptors/LoggedInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/AthleteMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/CompetitionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/TeamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Athlete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Competition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/AthletesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/CompetitionsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/PirmasKomponentas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Athletes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Competitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/AthleteMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/CompetitionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/TeamMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/k2s3_psk-ds.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mybatis/competitions.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/javascript/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +55,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -58,7 +92,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2fhIbFMcsPFhhEDApBifHUGMfqo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,17 +104,44 @@
     &quot;JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CodeProjects/University/3.2_VU/PSK/k3s2_psk1lab/src/main/resources/mybatis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.k3s2_psk1lab.entities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\resources\mybatis" />
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\mybatis" />
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\persistance" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\resources" />
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp\resources\javascript" />
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp\resources" />
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp" />
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\persistance" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="JBoss/WildFly 26.1.3.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.3.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/k3s2_psk1lab" />
@@ -172,6 +235,14 @@
       <workItem from="1714247010913" duration="840000" />
       <workItem from="1714247871299" duration="1181000" />
       <workItem from="1714249080948" duration="42000" />
+      <workItem from="1714249131154" duration="1477000" />
+      <workItem from="1714286519862" duration="6242000" />
+      <workItem from="1714294603748" duration="1450000" />
+      <workItem from="1714296074623" duration="9975000" />
+      <workItem from="1714308312698" duration="40551000" />
+      <workItem from="1714350001524" duration="2904000" />
+      <workItem from="1714352924607" duration="350000" />
+      <workItem from="1714353294228" duration="3282000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -181,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714248421818</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="css addition">
+      <option name="closed" value="true" />
+      <created>1714249156614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714249156614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +291,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="css addition" />
+    <MESSAGE value=" Big changes" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Big changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JBossConfiguration">
+        <watch expression="competition" language="JAVA" />
+        <watch expression="competition" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

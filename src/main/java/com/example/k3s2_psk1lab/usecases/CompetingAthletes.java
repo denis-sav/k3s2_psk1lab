@@ -9,12 +9,14 @@ import com.example.k3s2_psk1lab.entities.Competition;
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
+import com.example.k3s2_psk1lab.services.TextTransformer;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -39,9 +41,13 @@ public class CompetingAthletes {
     @Getter
     private List<Athlete> allParticipants;
 
+    @Inject
+    private TextTransformer textTransformer;
+
     @Transactional
     public void updateCompetition() {
-        competition = this.competitionsDAO.update(competition.getId(), competitionToUpdate.getName());
+        String name = textTransformer.toUpper(competitionToUpdate.getName());
+        competition = this.competitionsDAO.update(competition.getId(), name);
     }
 
     @Transactional

@@ -34,26 +34,6 @@ public class CompetingAthletes {
     private Athlete selectedAthlete = new Athlete();
 
     @Getter @Setter
-    private String amount;
-
-    @Getter @Setter
-    private Integer amountCalculated;
-
-    @Getter @Setter
-    private Integer amountInput;
-
-    public void setAmountCalculated(){
-        amountCalculated = this.allParticipants.size();
-        try {
-            amountInput = Integer.parseInt(amount);
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input: " + amount);
-            amountInput = 0;
-        }
-    }
-
-
-    @Getter @Setter
     private Competition competition = new Competition();
 
     @Getter

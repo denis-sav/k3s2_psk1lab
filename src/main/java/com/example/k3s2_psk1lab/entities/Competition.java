@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.EqualsAndHashCode;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.*;
 import java.util.List;
 
@@ -25,6 +24,7 @@ public class Competition {
 
     @ManyToMany
     private List<Athlete> athletes;
+
 
     @Override
     public String toString() {

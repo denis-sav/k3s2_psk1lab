@@ -42,4 +42,15 @@ public class Athlete {
                 ", team=" + team +
                 '}';
     }
+
+    @Basic
+    private Integer jerseyNumber;
+
+    public Integer getJerseyNumber() {
+        return jerseyNumber;
+    }
+
+    public void setJerseyNumber(Integer jerseyNumber) {
+        this.jerseyNumber = jerseyNumber;
+    }
 }

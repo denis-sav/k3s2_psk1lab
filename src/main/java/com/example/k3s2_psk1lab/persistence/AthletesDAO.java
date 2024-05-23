@@ -12,6 +12,7 @@ import java.util.List;
 @Setter
 @ApplicationScoped
 public class AthletesDAO {
+
     @Inject
     private EntityManager em;
 
@@ -31,5 +32,8 @@ public class AthletesDAO {
         return em.find(Athlete.class, id);
     }
 
+    public Athlete update(Athlete existingPlayer) {
+        return em.merge(existingPlayer);
+    }
 }
 

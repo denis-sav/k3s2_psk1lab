@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="MyBatis done">
+    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/rest/ApiConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/rest/AthletesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/rest/contracts/AthleteDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Athlete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Athlete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/AthletesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/AthletesDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,32 +73,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/CodeProjects/University/3.2_VU/PSK/k3s2_psk1lab/src/main/resources/mybatis&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/CodeProjects/University/3.2_VU/PSK/k3s2_psk1lab/src/main/resources/mybatis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.k3s2_psk1lab.entities" />
@@ -114,7 +117,10 @@
       <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\persistance" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
     <configuration name="JBoss/WildFly 26.1.3.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.3.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/k3s2_psk1lab" />
       <deployment>
@@ -186,6 +192,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in generated-requests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -226,7 +237,7 @@
       <workItem from="1715602290192" duration="1065000" />
       <workItem from="1715604831200" duration="607000" />
       <workItem from="1716414724035" duration="1923000" />
-      <workItem from="1716447860572" duration="189000" />
+      <workItem from="1716447860572" duration="4403000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -276,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714384326795</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1716448067482</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716448067482</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1716448194976</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716448194976</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +338,8 @@
     <MESSAGE value=" Big changes" />
     <MESSAGE value="CDI addition" />
     <MESSAGE value="MyBatis done" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyBatis done" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

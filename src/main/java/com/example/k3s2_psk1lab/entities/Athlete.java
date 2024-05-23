@@ -5,7 +5,6 @@ import lombok.Setter;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 @Setter
@@ -22,6 +21,7 @@ public class Athlete {
     private Long id;
 
     @Basic(optional = false)
+    @Column(columnDefinition="varchar(255)")
     private String Name;
 
     @Basic(optional = false)

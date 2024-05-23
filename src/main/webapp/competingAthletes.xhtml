@@ -46,7 +46,7 @@
         <h4>Registered athletes</h4>
             <h:dataTable value="#{competingAthletes.allParticipants}" var="athlete">
                 <h:column>
-                    <h:button class="mainButton" value="#{athlete.name} #{athlete.surname} #{athlete.team}"
+                    <h:button class="mainButton" value="#{athlete.name} #{athlete.surname} #{athlete.team.name}"
                               outcome="competingAthletes?competitionid=#{athlete.id}" />
                 </h:column>
             </h:dataTable>

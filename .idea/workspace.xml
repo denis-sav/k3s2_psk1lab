@@ -10,23 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="MyBatis done">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/interceptors/MethodLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/MyBatisResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/TeamsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/AthletesForTeam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/TeamsMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/mybatis/athletes.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/AthleteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/AthleteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/CompetitionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/CompetitionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/TeamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/dao/TeamMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Athlete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/mybatis/model/Athlete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mybatis/competitions.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mybatis/teams.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +85,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -230,7 +217,16 @@
       <workItem from="1714353294228" duration="3456000" />
       <workItem from="1714377618316" duration="1812000" />
       <workItem from="1714379449770" duration="3044000" />
-      <workItem from="1714382511693" duration="1734000" />
+      <workItem from="1714382511693" duration="1829000" />
+      <workItem from="1714387753583" duration="6772000" />
+      <workItem from="1714394770630" duration="208000" />
+      <workItem from="1714394995149" duration="254000" />
+      <workItem from="1714405611742" duration="892000" />
+      <workItem from="1714410789806" duration="372000" />
+      <workItem from="1715602290192" duration="1065000" />
+      <workItem from="1715604831200" duration="607000" />
+      <workItem from="1716414724035" duration="1923000" />
+      <workItem from="1716447860572" duration="189000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -272,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714379723823</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="MyBatis done">
+      <option name="closed" value="true" />
+      <created>1714384326795</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714384326795</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

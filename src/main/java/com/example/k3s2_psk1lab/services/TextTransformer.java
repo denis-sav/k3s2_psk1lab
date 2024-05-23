@@ -11,7 +11,7 @@ import java.util.Date;
 public class TextTransformer {
 
     public String toUpper(String input) {
-        return input.toUpperCase();
+        return "Default: " + input.toUpperCase();
     }
 
     @PostConstruct

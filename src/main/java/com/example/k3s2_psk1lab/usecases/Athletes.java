@@ -10,6 +10,7 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
+import javax.persistence.OptimisticLockException;
 import javax.transaction.Transactional;
 import java.io.Serializable;
 import java.util.List;
@@ -47,5 +48,16 @@ public class Athletes {
 
     private void loadAllAthletes(){
         this.allAthletes = athletesDAO.loadAll();
+    }
+
+    @Transactional
+    public void updateAthlete(Athlete athlete) {
+        try {
+            athletesDAO.update(athlete);
+        } catch (OptimisticLockException e) {
+            // Handle the exception (e.g., notify the user, retry the transaction, etc.)
+            System.out.println("Optimistic lock exception occurred: " + e.getMessage());
+            throw e;  // handle accordingly
+        }
     }
 }

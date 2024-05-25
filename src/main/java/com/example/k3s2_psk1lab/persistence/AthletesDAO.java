@@ -32,8 +32,8 @@ public class AthletesDAO {
         return em.find(Athlete.class, id);
     }
 
-    public Athlete update(Athlete existingPlayer) {
-        return em.merge(existingPlayer);
+    public Athlete update(Athlete existingAthlete) {
+        return em.merge(existingAthlete);
     }
 }
 

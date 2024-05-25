@@ -33,6 +33,9 @@ public class Athlete {
     @ManyToMany(mappedBy = "athletes")
     private List<Competition> competitions;
 
+    @Version
+    private Integer version;
+
     @Override
     public String toString() {
         return "Athlete{" +

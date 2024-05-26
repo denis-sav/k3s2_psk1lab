@@ -10,18 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="rest api">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28a0fad7-f1c0-462e-8604-32044ae08528.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/CompetitionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/CompetitionsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/SecondaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/SecondaryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Competitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Competitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +238,7 @@
       <workItem from="1715604831200" duration="607000" />
       <workItem from="1716414724035" duration="1923000" />
       <workItem from="1716447860572" duration="7525000" />
-      <workItem from="1716732730947" duration="4778000" />
+      <workItem from="1716732730947" duration="6985000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

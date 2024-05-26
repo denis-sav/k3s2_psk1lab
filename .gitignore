@@ -35,7 +35,7 @@ build/
 .vscode/
 
 ### Visual Studio ###
-.vscode/
+.vs/
 
 ### Mac OS ###
 .DS_Store

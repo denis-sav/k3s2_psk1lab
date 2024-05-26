@@ -50,7 +50,6 @@ public class Athletes {
         this.allAthletes = athletesDAO.loadAll();
     }
 
-    @Transactional
     public void updateAthlete(Athlete athlete) {
         try {
             athletesDAO.update(athlete);

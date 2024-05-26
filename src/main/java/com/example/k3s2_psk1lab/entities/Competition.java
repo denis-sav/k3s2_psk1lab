@@ -25,6 +25,9 @@ public class Competition {
     @ManyToMany
     private List<Athlete> athletes;
 
+    @Version
+    private Integer version;
+
     @Override
     public String toString() {
         return "Competition{" +

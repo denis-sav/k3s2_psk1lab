@@ -47,7 +47,7 @@ public class CompetingAthletes {
     @Transactional
     public void updateCompetition() {
         String name = textTransformer.toUpper(competitionToUpdate.getName());
-        competition = this.competitionsDAO.update(competition.getId(), name);
+        competition = this.competitionsDAO.updateName(competition.getId(), name);
     }
 
     @Transactional
@@ -63,11 +63,12 @@ public class CompetingAthletes {
         List<Athlete> athletes = this.competition.getAthletes();
         athletes.add(this.selectedAthlete);
         this.competition.setAthletes(athletes);
-        competition = this.competitionsDAO.updateAthletes(this.competition);
+        competition = this.competitionsDAO.update(this.competition);
     }
 
     private void loadAllParticipants(){ this.allParticipants = competition.getAthletes(); }
 
+    @Transactional
     @PostConstruct
     public void init() {
         Map<String, String> requestParameters =

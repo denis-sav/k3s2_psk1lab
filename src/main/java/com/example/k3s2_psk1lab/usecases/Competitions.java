@@ -58,7 +58,7 @@ public class Competitions {
         this.competitionToRemove = competitionsDAO.findOne(competitionId);
         this.competitionsDAO.remove(competitionToRemove);
     }
-
+    @Transactional
     private void loadAllCompetition(){
         this.allCompetitions = competitionsDAO.loadAll();
     }

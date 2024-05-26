@@ -7,6 +7,8 @@ import lombok.Setter;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.LockModeType;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Setter
@@ -28,19 +30,24 @@ public class CompetitionsDAO {
         em.remove(competition);
     }
 
-    public Competition update(Long id, String name) {
+    public Competition updateName(Long id, String name) {
         Competition competition = em.find(Competition.class,id);
         competition.setName(name);
         return competition;
     }
 
-    public Competition updateAthletes(Competition competition) {
+    @Transactional
+    public Competition update(Competition competition) {
         System.out.println(competition.toString());
         return em.merge(competition);
     }
-
+    @Transactional
     public Competition findOne(Long id) {
-        return em.find(Competition.class, id);
+        Competition competition = em.find(Competition.class, id);
+        if (competition != null) {
+            em.lock(competition, LockModeType.OPTIMISTIC_FORCE_INCREMENT);
+        }
+        return competition;
     }
 }
 

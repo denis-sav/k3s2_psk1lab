@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
@@ -11,49 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="rest api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/PrimaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/SecondaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28a0fad7-f1c0-462e-8604-32044ae08528.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-25_10_12__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/TextTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/TextTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="jsf" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="WARN_ABOUT_CRLF" value="false" />
-  </component>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="k3s2_psk1lab:war exploded" />
-    </artifacts-to-build>
-  </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="CDI alternatives (@Alternative)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/DoSomethingLong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/GenerateCompetitionLuckyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/entities/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/CompetitionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/CompetitionsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/SecondaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/SecondaryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Competitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Competitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +33,6 @@
       <list>
         <option value="jsf" />
         <option value="Class" />
-        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -73,7 +40,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
->>>>>>> 69856a44deb413143a3857ce10eb4a20fd5b2550
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
@@ -113,34 +79,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.All in generated-requests.executor": "Run",
-    "JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/CodeProjects/University/3.2_VU/PSK/k3s2_psk1lab/src/main/resources/mybatis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
+    &quot;JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CodeProjects/University/3.2_VU/PSK/k3s2_psk1lab/src/main/resources/mybatis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-<<<<<<< HEAD
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.k3s2_psk1lab.entities" />
@@ -164,6 +129,7 @@
     </configuration>
     <configuration name="JBoss/WildFly 26.1.3.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.3.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/k3s2_psk1lab" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <deployment>
         <artifact name="k3s2_psk1lab:war exploded">
           <settings />
@@ -233,6 +199,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.All in generated-requests" />
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.All in generated-requests" />
@@ -242,7 +212,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.16-jbr_dcevm-11.0.16-4caba194b151-788636e5" />
         <option value="jdk-17.0.10-graalvm-jdk-17.0.10-4caba194b151-6d8b2ca1" />
       </set>
     </attachedChunks>
@@ -279,6 +248,7 @@
       <workItem from="1715604831200" duration="607000" />
       <workItem from="1716414724035" duration="1923000" />
       <workItem from="1716447860572" duration="7525000" />
+      <workItem from="1716732730947" duration="4778000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -392,6 +362,40 @@
     <option name="LAST_COMMIT_MESSAGE" value="rest api" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/persistence/CompetitionsDAO.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/Competitions.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JBossConfiguration">
         <watch expression="competition" language="JAVA" />
@@ -403,293 +407,4 @@
     <expand />
     <select />
   </component>
-=======
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.k3s2_psk1lab.services" />
-      <recent name="com.example.k3s2_psk1lab.entities" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\resources\mybatis" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\mybatis" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\persistance" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\usecases" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\resources" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp\resources\javascript" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp\resources" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final">
-    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
-      <method v="2" />
-    </configuration>
-    <configuration name="JBoss/WildFly 26.1.3.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.3.Final" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/k3s2_psk1lab" />
-      <deployment>
-        <artifact name="k3s2_psk1lab:war exploded">
-          <settings />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="SERVER" />
-        <option name="BINDING_SET_NAME" value="" />
-        <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="main-server-group" />
-        <option name="USERNAME" value="" />
-        <option name="CREDENTIAL_ALIAS" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="JBoss" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="64929" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="k3s2_psk1lab:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.All in generated-requests" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.16-jbr_dcevm-11.0.16-4caba194b151-788636e5" />
-        <option value="jdk-17.0.10-graalvm-jdk-17.0.10-4caba194b151-6d8b2ca1" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="" />
-      <created>1714246953003</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1714246953003</updated>
-      <workItem from="1714246954070" duration="46000" />
-      <workItem from="1714247010913" duration="840000" />
-      <workItem from="1714247871299" duration="1181000" />
-      <workItem from="1714249080948" duration="42000" />
-      <workItem from="1714249131154" duration="1477000" />
-      <workItem from="1714286519862" duration="6242000" />
-      <workItem from="1714294603748" duration="1450000" />
-      <workItem from="1714296074623" duration="9975000" />
-      <workItem from="1714308312698" duration="40551000" />
-      <workItem from="1714350001524" duration="2904000" />
-      <workItem from="1714352924607" duration="350000" />
-      <workItem from="1714353294228" duration="3456000" />
-      <workItem from="1714377618316" duration="1812000" />
-      <workItem from="1714379449770" duration="3044000" />
-      <workItem from="1714382511693" duration="1829000" />
-      <workItem from="1714387753583" duration="6772000" />
-      <workItem from="1714394770630" duration="208000" />
-      <workItem from="1714394995149" duration="254000" />
-      <workItem from="1714405611742" duration="892000" />
-      <workItem from="1714410789806" duration="372000" />
-      <workItem from="1715602290192" duration="1065000" />
-      <workItem from="1715604831200" duration="607000" />
-      <workItem from="1716414724035" duration="1923000" />
-      <workItem from="1716447860572" duration="7578000" />
-      <workItem from="1716488881417" duration="178000" />
-      <workItem from="1716494379000" duration="323000" />
-      <workItem from="1716571967698" duration="8000" />
-      <workItem from="1716571993479" duration="656000" />
-      <workItem from="1716648864681" duration="598000" />
-      <workItem from="1716670272910" duration="1035000" />
-      <workItem from="1716671460758" duration="95000" />
-      <workItem from="1716671580034" duration="20000" />
-      <workItem from="1716671612623" duration="1717000" />
-      <workItem from="1716673956637" duration="215000" />
-      <workItem from="1716718003434" duration="797000" />
-      <workItem from="1716718869289" duration="6465000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1714248421818</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1714248421818</updated>
-    </task>
-    <task id="LOCAL-00002" summary="css addition">
-      <option name="closed" value="true" />
-      <created>1714249156614</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1714249156614</updated>
-    </task>
-    <task id="LOCAL-00003" summary=" Big changes">
-      <option name="closed" value="true" />
-      <created>1714356597116</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1714356597116</updated>
-    </task>
-    <task id="LOCAL-00004" summary=" Big changes">
-      <option name="closed" value="true" />
-      <created>1714356697080</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1714356697080</updated>
-    </task>
-    <task id="LOCAL-00005" summary="CDI addition">
-      <option name="closed" value="true" />
-      <created>1714379723823</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1714379723823</updated>
-    </task>
-    <task id="LOCAL-00006" summary="MyBatis done">
-      <option name="closed" value="true" />
-      <created>1714384326795</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1714384326795</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Changes">
-      <option name="closed" value="true" />
-      <created>1716448067482</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1716448067482</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Changes">
-      <option name="closed" value="true" />
-      <created>1716448194976</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1716448194976</updated>
-    </task>
-    <task id="LOCAL-00009" summary="rest api">
-      <option name="closed" value="true" />
-      <created>1716452301957</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1716452301957</updated>
-    </task>
-    <task id="LOCAL-00010" summary="CDI alternatives (@Alternative)">
-      <option name="closed" value="true" />
-      <created>1716457275313</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1716457275313</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="css addition" />
-    <MESSAGE value=" Big changes" />
-    <MESSAGE value="CDI addition" />
-    <MESSAGE value="MyBatis done" />
-    <MESSAGE value="Changes" />
-    <MESSAGE value="rest api" />
-    <MESSAGE value="CDI alternatives (@Alternative)" />
-    <option name="LAST_COMMIT_MESSAGE" value="CDI alternatives (@Alternative)" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JBossConfiguration">
-        <watch expression="competition" language="JAVA" />
-        <watch expression="competition" language="JAVA" />
-        <watch expression="luckyNumberGenerationTask" language="JAVA" />
-        <watch expression="luckyNumberGenerationTask" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
-  </component>
->>>>>>> 69856a44deb413143a3857ce10eb4a20fd5b2550
 </project>

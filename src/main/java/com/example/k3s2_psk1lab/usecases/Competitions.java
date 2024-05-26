@@ -20,15 +20,15 @@ public class Competitions {
     @Inject
     private CompetitionsDAO competitionsDAO;
 
-    @Getter @Setter
-    private Competition selectedCompetition;
+//    @Getter @Setter
+//    private Competition selectedCompetition;
 
-    public void select_Competition() {
-        Map<String, String> requestParameters =
-                FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
-        Long competitionId = Long.parseLong(requestParameters.get("competitionId"));
-        this.selectedCompetition = competitionsDAO.findOne(competitionId);
-    }
+//    public void select_Competition() {
+//        Map<String, String> requestParameters =
+//                FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
+//        Long competitionId = Long.parseLong(requestParameters.get("competitionId"));
+//        this.selectedCompetition = competitionsDAO.findOne(competitionId);
+//    }
 
     @Getter @Setter
     private Competition competitionToCreate = new Competition();

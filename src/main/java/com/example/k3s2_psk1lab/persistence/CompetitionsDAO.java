@@ -5,8 +5,11 @@ import com.example.k3s2_psk1lab.entities.Competition;
 import lombok.Setter;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.LockModeType;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Setter
@@ -28,19 +31,21 @@ public class CompetitionsDAO {
         em.remove(competition);
     }
 
-    public Competition update(Long id, String name) {
-        Competition competition = em.find(Competition.class,id);
-        competition.setName(name);
-        return competition;
+    public Competition update(Competition competition) {
+        return em.merge(competition);
     }
 
     public Competition updateAthletes(Competition competition) {
         System.out.println(competition.toString());
         return em.merge(competition);
     }
-
+    @Transactional
     public Competition findOne(Long id) {
-        return em.find(Competition.class, id);
+        Competition competition = em.find(Competition.class, id);
+        if (competition != null) {
+            em.lock(competition, LockModeType.OPTIMISTIC);
+        }
+        return competition;
     }
 }
 

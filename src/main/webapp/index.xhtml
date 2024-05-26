@@ -15,7 +15,6 @@
                 <h:form>
                     <h:commandButton class="mainButton"
                                      value="#{competition.name}"
-                                     actionListener="#{competitions.select_Competition}"
                                      action="#{'competingAthletes?faces-redirect=true&amp;competitionId='.concat(competition.id)}">
                         <f:param name="competitionId" value="#{competition.id}" />
                     </h:commandButton>

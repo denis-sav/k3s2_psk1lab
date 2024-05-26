@@ -21,7 +21,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Model
-public class CompetingAthletes {
+@ViewScoped
+public class CompetingAthletes implements Serializable {
 
     @Inject
     private AthletesDAO athletesDAO;
@@ -46,8 +47,8 @@ public class CompetingAthletes {
 
     @Transactional
     public void updateCompetition() {
-        String name = textTransformer.toUpper(competitionToUpdate.getName());
-        competition = this.competitionsDAO.update(competition.getId(), name);
+        this.competition.setName(competitionToUpdate.getName());
+        competitionToUpdate = this.competitionsDAO.update(competition);
     }
 
     @Transactional
@@ -69,7 +70,7 @@ public class CompetingAthletes {
             List<Athlete> athletes = this.competition.getAthletes();
             athletes.add(this.selectedAthlete);
             this.competition.setAthletes(athletes);
-            competition = this.competitionsDAO.updateAthletes(this.competition);
+            competition = this.competitionsDAO.update(this.competition);
         } catch (NumberFormatException e) {
             // Handle the error gracefully, e.g., log the error, display a message to the user, etc.
             throw new IllegalArgumentException("Competition ID is not a valid number.");

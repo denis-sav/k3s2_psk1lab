@@ -41,7 +41,7 @@
             <h:form>
                 <h:inputText styleClass="inputText" value="#{competingAthletes.competitionToUpdate.name}" required="true" />
                 <h:commandButton class="mainButton" styleClass="commandButton" value="Update" actionListener="#{competingAthletes.updateCompetition}"
-                                 action="#{'competingAthletes?faces-redirect=true&amp;competitionId='.concat(competingAthletes.competition.id)}">
+                                 >
                     <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
                 </h:commandButton>
             </h:form>

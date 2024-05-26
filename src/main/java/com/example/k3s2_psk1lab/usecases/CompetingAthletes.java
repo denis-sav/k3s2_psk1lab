@@ -47,7 +47,7 @@ public class CompetingAthletes implements Serializable {
 
     @Transactional
     public void updateCompetition() {
-        this.competition.setName(competitionToUpdate.getName());
+        this.competition.setName(textTransformer.toUpper(competitionToUpdate.getName()));
         competitionToUpdate = this.competitionsDAO.update(competition);
     }
 

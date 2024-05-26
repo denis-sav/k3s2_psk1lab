@@ -4,13 +4,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
->
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
     <h:outputStylesheet library="css" name="styles.css"/>
     <h:outputScript library="javascript" name="scripts.js"/>
 </h:head>
 <h:body>
+    <f:metadata>
+        <f:viewParam name="playerId" value="#{competingAthletes.selectedAthlete.id}" />
+        <f:viewParam name="competitionId" value="#{competingAthletes.competition.id}" />
+    </f:metadata>
+
+    <!-- async -->
+    <div class="competingAthletes">
+        <h2>Generate Lucky Number</h2>
+        <h:form>
+            <h:commandButton class="mainButton" value="Generate Lucky Number" action="#{generateCompetitionLuckyNumber.generateNewLuckyNumber}">
+                <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
+            </h:commandButton>
+        </h:form>
+        <br/>
+        <h:form>
+            <h:commandButton class="mainButton" value="Refresh Status" action="#{generateCompetitionLuckyNumber.getLuckyGenerationStatus}">
+                <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
+            </h:commandButton>
+            <br/><br/>
+            <h:outputText value="#{generateCompetitionLuckyNumber.getLuckyStatus()}" />
+        </h:form>
+    </div>
+
     <div class="competingAthletes">
         <h2>Competing athletes</h2>
         <h4>Competition: #{competingAthletes.competition.name}</h4>
@@ -40,17 +62,17 @@
                     <f:param name="competitionId" value="#{competingAthletes.competition.id}" />
                 </h:commandButton>
             </h:form>
-
         </div>
         <br/>
         <h4>Registered athletes</h4>
+        <h:form>
             <h:dataTable value="#{competingAthletes.allParticipants}" var="athlete">
                 <h:column>
                     <h:button class="mainButton" value="#{athlete.name} #{athlete.surname} #{athlete.team.name}"
-                              outcome="competingAthletes?competitionid=#{athlete.id}" />
+                              outcome="competingAthletes?competitionId=#{competingAthletes.competition.id}" />
                 </h:column>
             </h:dataTable>
-
+        </h:form>
         <br/>
 
         <div class="createNew">
@@ -68,9 +90,9 @@
         </div>
 
         <br/>
-        <h:button class="mainButton" value="Back"
-                  outcome="index" />
+        <h:form>
+            <h:button class="mainButton" value="Back" outcome="index" />
+        </h:form>
     </div>
-
 </h:body>
 </html>

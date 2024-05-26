@@ -52,19 +52,31 @@ public class CompetingAthletes {
 
     @Transactional
     public void createActiveAthlete() {
-        Map<String, String> requestParameters =
-                FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
-        Long competitionId  = Long.parseLong(requestParameters.get("competitionId"));
-//        Long athleteId      = Long.parseLong(requestParameters.get("athleteId"));
+        Map<String, String> requestParameters = FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
+        String competitionIdStr = requestParameters.get("competitionId");
 
-        this.selectedAthlete = this.athletesDAO.findOne(selectedAthlete.getId());
-        this.competition = this.competitionsDAO.findOne(competitionId);
+        if (competitionIdStr == null || competitionIdStr.isEmpty()) {
+            // Handle the error gracefully, e.g., log the error, display a message to the user, etc.
+            throw new IllegalArgumentException("Competition ID is missing or invalid.");
+        }
 
-        List<Athlete> athletes = this.competition.getAthletes();
-        athletes.add(this.selectedAthlete);
-        this.competition.setAthletes(athletes);
-        competition = this.competitionsDAO.updateAthletes(this.competition);
+        try {
+            Long competitionId = Long.parseLong(competitionIdStr);
+
+            this.selectedAthlete = this.athletesDAO.findOne(selectedAthlete.getId());
+            this.competition = this.competitionsDAO.findOne(competitionId);
+
+            List<Athlete> athletes = this.competition.getAthletes();
+            athletes.add(this.selectedAthlete);
+            this.competition.setAthletes(athletes);
+            competition = this.competitionsDAO.updateAthletes(this.competition);
+        } catch (NumberFormatException e) {
+            // Handle the error gracefully, e.g., log the error, display a message to the user, etc.
+            throw new IllegalArgumentException("Competition ID is not a valid number.");
+        }
     }
+
+
 
     private void loadAllParticipants(){ this.allParticipants = competition.getAthletes(); }
 
@@ -72,9 +84,25 @@ public class CompetingAthletes {
     public void init() {
         Map<String, String> requestParameters =
                 FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
-        Long competitionId = Long.parseLong(requestParameters.get("competitionId"));
-        this.competition = competitionsDAO.findOne(competitionId);
-
-        loadAllParticipants();
+        String competitionIdParam = requestParameters.get("competitionId");
+        if (competitionIdParam != null && !competitionIdParam.isEmpty()) {
+            try {
+                Long competitionId = Long.parseLong(competitionIdParam);
+                this.competition = competitionsDAO.findOne(competitionId);
+                if (this.competition != null) {
+                    loadAllParticipants();
+                } else {
+                    // Handle the case where the competition with the given ID does not exist
+                }
+            } catch (NumberFormatException e) {
+                // Handle the case where the competitionIdParam cannot be parsed as a Long
+                // For example, log the error or handle it gracefully
+                e.printStackTrace();
+            }
+        } else {
+            // Handle the case where the competitionIdParam is null or empty
+        }
     }
+
+
 }

@@ -23,6 +23,7 @@ public class Competitions {
     @Getter @Setter
     private Competition selectedCompetition;
 
+    @Transactional
     public void select_Competition() {
         Map<String, String> requestParameters =
                 FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();

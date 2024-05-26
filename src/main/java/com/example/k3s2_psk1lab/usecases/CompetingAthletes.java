@@ -27,7 +27,7 @@ public class CompetingAthletes {
     private AthletesDAO athletesDAO;
 
     @Getter @Setter
-    private Competition competitionToUpdate = new Competition();
+    private String newName;
 
     @Inject
     private CompetitionsDAO competitionsDAO;
@@ -46,8 +46,8 @@ public class CompetingAthletes {
 
     @Transactional
     public void updateCompetition() {
-        String name = textTransformer.toUpper(competitionToUpdate.getName());
-        competition = this.competitionsDAO.updateName(competition.getId(), name);
+        competition.setName(textTransformer.toUpper(getNewName()));
+        competition = this.competitionsDAO.update(competition);
     }
 
     @Transactional

@@ -30,12 +30,6 @@ public class CompetitionsDAO {
         em.remove(competition);
     }
 
-    public Competition updateName(Long id, String name) {
-        Competition competition = em.find(Competition.class,id);
-        competition.setName(name);
-        return competition;
-    }
-
     @Transactional
     public Competition update(Competition competition) {
         System.out.println(competition.toString());

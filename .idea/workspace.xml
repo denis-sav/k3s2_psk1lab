@@ -9,12 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="rest api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/PrimaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/SecondaryService.java" afterDir="false" />
+    <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="CDI alternatives (@Alternative)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/DoSomethingLong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/GenerateCompetitionLuckyNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/faces-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/TextTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/services/TextTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,7 @@
       <list>
         <option value="jsf" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -101,6 +104,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.k3s2_psk1lab.services" />
       <recent name="com.example.k3s2_psk1lab.entities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -109,11 +113,11 @@
       <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\persistance" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\usecases" />
       <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\resources" />
       <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp\resources\javascript" />
       <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp\resources" />
       <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\webapp" />
-      <recent name="C:\CodeProjects\University\3.2_VU\PSK\k3s2_psk1lab\src\main\java\com\example\k3s2_psk1lab\persistance" />
     </key>
   </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.1.3.Final">
@@ -236,7 +240,19 @@
       <workItem from="1715602290192" duration="1065000" />
       <workItem from="1715604831200" duration="607000" />
       <workItem from="1716414724035" duration="1923000" />
-      <workItem from="1716447860572" duration="7525000" />
+      <workItem from="1716447860572" duration="7578000" />
+      <workItem from="1716488881417" duration="178000" />
+      <workItem from="1716494379000" duration="323000" />
+      <workItem from="1716571967698" duration="8000" />
+      <workItem from="1716571993479" duration="656000" />
+      <workItem from="1716648864681" duration="598000" />
+      <workItem from="1716670272910" duration="1035000" />
+      <workItem from="1716671460758" duration="95000" />
+      <workItem from="1716671580034" duration="20000" />
+      <workItem from="1716671612623" duration="1717000" />
+      <workItem from="1716673956637" duration="215000" />
+      <workItem from="1716718003434" duration="797000" />
+      <workItem from="1716718869289" duration="6465000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -310,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716452301957</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CDI alternatives (@Alternative)">
+      <option name="closed" value="true" />
+      <created>1716457275313</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716457275313</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,13 +371,16 @@
     <MESSAGE value="MyBatis done" />
     <MESSAGE value="Changes" />
     <MESSAGE value="rest api" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest api" />
+    <MESSAGE value="CDI alternatives (@Alternative)" />
+    <option name="LAST_COMMIT_MESSAGE" value="CDI alternatives (@Alternative)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JBossConfiguration">
         <watch expression="competition" language="JAVA" />
         <watch expression="competition" language="JAVA" />
+        <watch expression="luckyNumberGenerationTask" language="JAVA" />
+        <watch expression="luckyNumberGenerationTask" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

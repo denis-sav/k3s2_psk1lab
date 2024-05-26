@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56fefa1e-10d6-427f-8329-bf772e030da2" name="Changes" comment="rest api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/competingAthletes.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/k3s2_psk1lab/usecases/CompetingAthletes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +238,8 @@
       <workItem from="1715604831200" duration="607000" />
       <workItem from="1716414724035" duration="1923000" />
       <workItem from="1716447860572" duration="7525000" />
-      <workItem from="1716732730947" duration="6985000" />
+      <workItem from="1716732730947" duration="7129000" />
+      <workItem from="1716754441077" duration="447000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

@@ -6,7 +6,6 @@
     <persistence-unit name="CompetitionPU" transaction-type="JTA">
         <jta-data-source>k3s2_psk1labDataSource</jta-data-source>
         <properties>
-            <!--<property name="hibernate.hbm2ddl.auto" value="create"/>-->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>

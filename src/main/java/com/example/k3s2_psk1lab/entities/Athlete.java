@@ -3,6 +3,7 @@ package com.example.k3s2_psk1lab.entities;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.EqualsAndHashCode;
+import org.hibernate.annotations.Check;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Athlete.findAll", query = "select a from Athlete as a")
 })
+@Check(constraints = "Name REGEXP '^[A-Za-z]+$'")
 public class Athlete {
     @Id
 //    @Column(name = "Athlete_id")
